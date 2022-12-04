@@ -18,4 +18,10 @@ export default class LoginService {
 
     return { token };
   };
+
+  register = async (userInfo: IUser) => {
+    const createdUser = await prisma.user.create({ data: { ...userInfo } });
+
+    return createdUser;
+  };
 }

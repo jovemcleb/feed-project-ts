@@ -18,4 +18,11 @@ export default class LoginController {
 
     return res.status(httpStatusCode.OK).json({ token });
   };
+
+  register = async (req: Request, res: Response) => {
+    const userInfo = req.body;
+    const createdUser = await this._service.register(userInfo);
+
+    return res.status(httpStatusCode.CREATED).json(createdUser);
+  };
 }
