@@ -1,5 +1,6 @@
 import { Header } from "./Components/Header/Header";
 import { Sidebar } from "./Components/Sidebar/Sidebar";
+import { AddPost } from "./Components/AddPost/AddPost";
 import { Post } from "./Components/Posts/Post";
 
 import "./global.css";
@@ -13,6 +14,7 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
+          <AddPost />
           {posts.map(({ id, author, content, publishedAt }) => (
             <Post
               key={id}
