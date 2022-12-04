@@ -1,10 +1,18 @@
 import express, { Request, Response } from 'express';
+import mainRouter from './routes';
+import Post from './services/postService';
 
 const app = express();
 
-app.get('/ola', (_req: Request, res: Response) => {
-  return res.json({ message: 'Olá, estou aqui, ou não' });
+app.use(express.json());
+
+app.get('/ola', async (_req: Request, res: Response) => {
+  const allPosts = await Post.getAllPosts();
+
+  return res.json(allPosts);
 });
+
+app.use(mainRouter);
 
 const PORT = 3001;
 
