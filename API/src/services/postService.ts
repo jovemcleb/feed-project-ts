@@ -1,4 +1,4 @@
-import {prisma} from '../prisma/prismaClient';
+import { prisma } from '../prisma/prismaClient';
 import { ICreatePost } from '../interfaces/ICreatePost';
 
 export default class Post {
@@ -7,22 +7,22 @@ export default class Post {
     return allPosts;
   };
 
-  static getPostById = async (id:string) => {
+  static getPostById = async (id: string) => {
     const post = await prisma.post.findUnique({
       where: {
         id: Number(id),
-      }
+      },
     });
     return post;
   };
 
-  static createPost = async ({content, userId}:ICreatePost) => {
+  static createPost = async ({ content, userId }: ICreatePost) => {
     const newPost = await prisma.post.create({
       data: {
         content,
-        userId:Number(userId),
-      }
+        userId: Number(userId),
+      },
     });
     return newPost;
-  }
+  };
 }

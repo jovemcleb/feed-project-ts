@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
-import LoginService from "../services/loginService";
-import httpStatusCode from "../helpers/httpStatusCode";
+import { Request, Response } from 'express';
+import LoginService from '../services/loginService';
+import httpStatusCode from '../helpers/httpStatusCode';
 
 export default class LoginController {
   private _service;
@@ -8,14 +8,14 @@ export default class LoginController {
   constructor() {
     this._service = new LoginService();
   }
-  
+
   login = async (req: Request, res: Response) => {
-      const { email, password } = req.body;
-      
-      const { message, token } = await this._service.login(email, password);
+    const { email, password } = req.body;
 
-      if (message) return res.status(httpStatusCode.NOT_FOUND).json({ message });
+    const { message, token } = await this._service.login(email, password);
 
-      return res.status(httpStatusCode.OK).json({ token });
-  }
+    if (message) return res.status(httpStatusCode.NOT_FOUND).json({ message });
+
+    return res.status(httpStatusCode.OK).json({ token });
+  };
 }

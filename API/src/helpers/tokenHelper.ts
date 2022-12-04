@@ -11,7 +11,7 @@ type UserInfo = {
 
 export default class TokenHelper {
   static createToken(payload: UserInfo) {
-    const token = sign({payload}, JWT_SECRET, JWT_CONFIG);
+    const token = sign({ payload }, JWT_SECRET, JWT_CONFIG);
     return token;
   }
 
