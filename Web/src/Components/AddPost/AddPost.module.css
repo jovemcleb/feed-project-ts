@@ -1,0 +1,45 @@
+.createPost {
+  background: var(--gray-800);
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.formCreate {
+  with: 100%;
+  padding-top: 1.5rem;
+}
+
+.formCreate textarea {
+  width: 100%;
+  background: var(--gray-900);
+  border: 0;
+  resize: none;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  line-height: 1.4;
+}
+
+.formCreate button {
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--green-500);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.formCreate .wrapButton {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.formCreate:focus-within .wrapButton {
+  visibility: visible;
+  max-height: none;
+}
