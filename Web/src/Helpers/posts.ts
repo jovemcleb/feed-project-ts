@@ -4,7 +4,7 @@ export const posts = [
     id: 1,
     author: {
       avatarUrl:
-        "https://lh3.googleusercontent.com/a/ALm5wu1ngu0I-aXVKOsRE9zKRPN2rgRbAI7fTBcBIoVx=s288-p-rw-no",
+        "https://github.com/jovemcleb.png",
       name: "Caleb Lima",
       role: "Front-end Developer",
     },

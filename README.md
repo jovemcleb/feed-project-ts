@@ -12,6 +12,9 @@ Email: lima.carodoso.caleb@gmail.com
 
 Celular: 91 980119059
 
+## 🚀 Link do Deploy
+[https://feed-project-ts.vercel.app/](https://feed-project-ts.vercel.app/)
+
 ## 📝 Descrição
 
 Esse projeto consiste em uma page simples de um feed, onde renderiza posts e adiciona comentários no post, futuramente será implementada a função de criar um novo post.
@@ -32,7 +35,12 @@ Esse projeto consiste em uma page simples de um feed, onde renderiza posts e adi
 git clone git@github.com:jovemcleb/feed-project-ts.git
 ```
 
-2. Em seguida, entre no diretório e instale as dependências do projeto com:
+2. Entre na pasta Web
+```
+cd Web
+```
+
+3. Em seguida, entre no diretório e instale as dependências do projeto com:
 
 ```bash
 npm install
@@ -40,16 +48,12 @@ OU
 yarn install
 ```
 
-3. Rode o comando `npm run dev`:
+4. Rode o comando `npm run dev`:
 
 ```bash
 npm run dev
 ```
 
-4. O seu terminal irá retorna algo similar a imagem abaixo, basta segurar o Ctrl do seu teclado e clicar em cima de `http://127.0.0.1:5173/`
-
-![https://cdn.discordapp.com/attachments/989139685865562162/1048970627714924734/image.png](https://cdn.discordapp.com/attachments/989139685865562162/1048970627714924734/image.png)
-
 5. Agora é só aproveitar o projeto:
 
-   ![https://media.discordapp.net/attachments/764259751092682761/1048967820685361182/image.png?width=960&height=525](https://media.discordapp.net/attachments/764259751092682761/1048967820685361182/image.png?width=960&height=525)
+   ![https://cdn.discordapp.com/attachments/989139685865562162/1230139985429004298/image.png?ex=66323c23&is=661fc723&hm=57bd66db5b3961185719283e15c0035725558b5ef6e30c20554583892b9dec1a&](https://cdn.discordapp.com/attachments/989139685865562162/1230139985429004298/image.png?ex=66323c23&is=661fc723&hm=57bd66db5b3961185719283e15c0035725558b5ef6e30c20554583892b9dec1a&)
